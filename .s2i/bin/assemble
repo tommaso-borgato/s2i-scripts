@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "##### START CUSTOMIZATION #####"
+DATE=`date "+%b %d, %Y @ %H:%M %p"`
+echo "---> Creating info page"
+echo "Page built on $DATE" >> ./info.html
+echo "Proudly served by Apache HTTP Server version $HTTPD_VERSION" >> ./info.html
+echo "##### END CUSTOMIZATION #####"
+/usr/libexec/s2i/assemble
